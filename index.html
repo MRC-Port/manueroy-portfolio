@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Manuel Roy Cabahug, a senior graphic artist specializing in branding, typography, print, digital design, and visual storytelling.">
+  <meta name="theme-color" content="#080b11">
+  <title>Manuel Roy Cabahug — Senior Graphic Artist</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23080b11'/%3E%3Cpath d='m25 19-12 13 12 13M39 19l12 13-12 13' fill='none' stroke='%237cfc9b' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080b11;--surface:#0e131c;--surface-2:#131a25;--text:#f2f5f7;--muted:#929baa;--line:rgba(255,255,255,.1);--accent:#db9f2c;--accent-2:#57c9ff;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 78% 12%,rgba(87,201,255,.09),transparent 28%),radial-gradient(circle at 12% 45%,rgba(168,133,65,.06),transparent 25%);z-index:-1}
+    h1,h2,h3,h4,.navbar-brand{font-family:'Space Grotesk',sans-serif;letter-spacing:-.035em}.text-muted-custom{color:var(--muted)}a{text-decoration:none}.section{padding:110px 0}.eyebrow{font-family:monospace;color:var(--accent);font-size:.84rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:14px}.section-title{font-size:clamp(2.15rem,4vw,3.7rem);line-height:1.08;margin-bottom:18px}.section-copy{max-width:620px;color:var(--muted);font-size:1.05rem}
+    .navbar{padding:18px 0;background:rgba(8,11,17,.78);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.3s}.navbar.scrolled{padding:12px 0;border-color:var(--line)}.navbar-brand{color:#fff!important;font-size:1.25rem}.brand-mark{color:var(--accent)}.nav-link{color:#a8b0bc!important;margin-left:18px;font-size:.93rem}.nav-link:hover,.nav-link.active{color:#fff!important}.navbar-toggler{border-color:var(--line)}.navbar-toggler-icon{filter:invert(1)}
+    .hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px}.status{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:99px;padding:7px 13px;color:#c6cdd6;font-size:.84rem}.status-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(168,133,65,.1)}.hero h1{font-size:clamp(3.6rem,8vw,7.8rem);line-height:.92;margin:28px 0}.hero h1 span{color:transparent;-webkit-text-stroke:1px #727b88}.role-word{display:inline-block;transition:opacity .28s ease,transform .28s ease}.role-word.switching{opacity:0;transform:translateY(12px)}.hero-lead{font-size:clamp(1.05rem,2vw,1.3rem);max-width:650px;color:var(--muted)}
+    .btn-accent{background:var(--accent);color:#16120a;border:1px solid var(--accent);font-weight:700;padding:13px 20px;border-radius:12px}.btn-accent:hover{background:#b99753;border-color:#b99753;color:#16120a;transform:translateY(-2px)}.btn-ghost{color:#fff;border:1px solid var(--line);padding:13px 20px;border-radius:12px}.btn-ghost:hover{color:#fff;border-color:#667080;background:rgba(255,255,255,.04);transform:translateY(-2px)}.btn{transition:.2s}
+    .design-window{--app-accent:#31a8ff;background:#0b1017;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 30px 90px rgba(0,0,0,.4);overflow:hidden;transform:rotate(1.5deg)}.design-bar{min-height:54px;display:flex;align-items:center;gap:7px;padding:7px 12px;border-bottom:1px solid var(--line)}.window-dot{width:9px;height:9px;border-radius:50%;background:#333b47;flex:0 0 auto}.window-dot:nth-child(1){background:#ff6b6b}.window-dot:nth-child(2){background:#ffd166}.window-dot:nth-child(3){background:#a88541}.app-tabs{display:flex;gap:5px;margin-left:10px}.app-tab{display:flex;align-items:center;gap:6px;border:1px solid transparent;background:transparent;color:#8f99a8;border-radius:8px;padding:6px 8px;font:600 10px 'DM Sans';transition:.2s}.app-tab:hover{color:#fff;background:rgba(255,255,255,.05)}.app-tab.active{color:#fff;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.09)}.app-icon{width:20px;height:20px;display:grid;place-items:center;border:1px solid currentColor;border-radius:5px;color:var(--tab-color);font:700 9px 'Space Grotesk'}.design-filename{margin-left:auto;color:#8791a0;font-size:.67rem;white-space:nowrap}.design-body{display:grid;grid-template-columns:45px 1fr 70px;min-height:350px}.design-tools,.design-layers{padding:16px 10px;background:#0e141d}.design-tools{border-right:1px solid var(--line)}.design-layers{border-left:1px solid var(--line)}.tool{width:25px;height:25px;margin:0 auto 13px;border:1px solid #334050;border-radius:6px;display:grid;place-items:center;color:#8290a2;font-size:.65rem}.tool.active{background:var(--app-accent);border-color:var(--app-accent);color:#16120a}.artboard-wrap{display:grid;place-items:center;padding:25px;background-color:#121925;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:18px 18px}.artboard{width:210px;aspect-ratio:4/5;background:#eef0e9;color:#0b0e12;padding:24px;position:relative;box-shadow:0 18px 35px rgba(0,0,0,.35);overflow:hidden;animation:workspaceIn .3s ease}.artboard::before{content:"";position:absolute;width:155px;height:155px;border-radius:50%;background:var(--shape-one,#a88541);right:-55px;top:-45px}.artboard::after{content:"";position:absolute;width:95px;height:95px;border-radius:50%;border:18px solid var(--shape-two,#57c9ff);left:-38px;bottom:-35px}.art-kicker{position:relative;z-index:2;font:700 10px 'DM Sans';letter-spacing:.18em}.art-title{position:relative;z-index:2;font:700 34px/.88 'Space Grotesk';letter-spacing:-.07em;margin-top:65px}.art-copy{position:relative;z-index:2;font-size:8px;line-height:1.4;width:75%;margin-top:13px}.swatches{display:flex;gap:5px;position:absolute;z-index:2;right:17px;bottom:18px}.swatches span{width:11px;height:11px;border-radius:50%;background:#0b0e12}.swatches span:nth-child(2){background:var(--shape-two,#57c9ff)}.swatches span:nth-child(3){background:var(--shape-one,#a88541)}.layer-line{height:7px;border-radius:4px;background:#293341;margin-bottom:12px}.layer-line.active{background:var(--app-accent)}@keyframes workspaceIn{from{opacity:.25;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+    .stat{padding:22px 0;border-top:1px solid var(--line)}.stat-number{font-family:'Space Grotesk';font-size:2rem;font-weight:700}.stat-label{font-size:.85rem;color:var(--muted)}
+    .about-card,.skill-card,.contact-card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:var(--radius)}.about-card{padding:34px;height:100%}.icon-box{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:rgba(168,133,65,.1);color:var(--accent);font-size:1.1rem;margin-bottom:25px}.about-card h3{font-size:1.25rem}.about-card p{color:var(--muted);margin:0}.about-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}.about-tab-btn{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025);color:var(--muted);padding:11px 20px;font:600 .82rem 'DM Sans';letter-spacing:.03em;transition:.25s}.about-tab-btn:hover{color:var(--text);border-color:rgba(168,133,65,.45);transform:translateY(-1px)}.about-tab-btn.active{color:#16120a;background:var(--accent);border-color:var(--accent);box-shadow:0 8px 24px rgba(168,133,65,.14)}.about-structure{display:block}.about-data-card{display:none;padding:30px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:var(--radius)}.about-data-card.active{display:block;animation:aboutPanelIn .3s ease}.about-card-head{display:flex;align-items:center;gap:14px;margin-bottom:24px}.about-card-head .icon-box{flex:0 0 auto;margin:0}.about-card-head h3{margin:0;font-size:1.35rem}.about-card-number{display:block;color:var(--accent);font:600 .72rem monospace;letter-spacing:.14em;text-transform:uppercase}.bio-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:0}.bio-row{display:grid;grid-template-columns:112px minmax(0,1fr);gap:12px;padding:13px 0;border-top:1px solid var(--line)}.bio-row dt{color:var(--muted);font-size:.78rem;font-weight:500}.bio-row dd{margin:0;color:var(--text);font-size:.9rem;overflow-wrap:anywhere}.bio-row a{color:var(--text)}.bio-row a:hover{color:var(--accent)}.education-list,.company-list{display:grid;gap:12px}.education-item,.company-item{padding:16px;background:#0a0e15;border:1px solid var(--line);border-radius:14px}.education-item strong,.company-item strong{display:block;color:var(--text);font-size:.95rem}.education-item span,.company-item span{display:block;margin-top:3px;color:var(--muted);font-size:.8rem}.company-list{grid-template-columns:repeat(5,minmax(0,1fr))}@keyframes aboutPanelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    #about-experience{padding:0;background:transparent;border:0;border-radius:0}.skill-card{padding:28px;height:100%}.skill-card h3{font-size:1.15rem;margin-bottom:18px}.tech-list{display:flex;flex-wrap:wrap;gap:9px}.tech-pill{padding:7px 11px;border-radius:9px;background:#0a0e15;border:1px solid var(--line);color:#bdc5d0;font-size:.84rem}
+    #skills .skill-card{position:relative;isolation:isolate;height:100%;min-height:285px;padding:30px 25px;background:linear-gradient(145deg,#222930,#171d23);border:1px solid rgba(219,159,44,.67);border-radius:0;box-shadow:11px 11px 0 rgba(168,133,65,.12);transition:transform .25s ease,box-shadow .25s ease}
+    #skills .skill-card::before{content:"";position:absolute;inset:11px;border:1px solid rgba(212,218,220,.15);pointer-events:none;z-index:-1}
+    #skills .skill-card:hover{transform:translate(-3px,-3px);box-shadow:14px 14px 0 rgba(168,133,65,.16)}
+    #skills .skill-card h3{color:#e8c888;font-size:1.12rem;line-height:1.3;margin:5px 0 22px;letter-spacing:.01em}
+    #skills .skill-card h3 i{color:#e8c888!important}
+    #skills .tech-list{gap:9px}
+    #skills .tech-pill{background:rgba(10,14,19,.43);border:1px solid rgba(232,200,136,.23);border-radius:0;color:#e0e3e5;font-size:.8rem;line-height:1.4;padding:7px 10px}
+    @media(max-width:767px){#skills .skill-card{min-height:0}}
+    .filter-btn{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:8px 15px;font-size:.88rem}.filter-btn.active,.filter-btn:hover{color:#16120a;background:var(--accent);border-color:var(--accent)}.project-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow: visible !important;height:100%;transition:.35s}.project-card:hover{transform:translateY(-8px);border-color:rgba(168,133,65,.35);z-index:10}.project-visual{height:220px;background:#101722;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.project-visual::before{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(255,255,255,.08);border-radius:50%}.project-visual::after{content:"";position:absolute;width:150px;height:150px;background:radial-gradient(circle,rgba(168,133,65,.25),transparent 65%);border-radius:50%}.mock-window{position:relative;z-index:2;width:76%;height:62%;border:1px solid rgba(255,255,255,.15);border-radius:12px;background:rgba(7,10,15,.82);padding:15px;box-shadow:0 18px 40px rgba(0,0,0,.35)}.mock-line{height:7px;background:#293341;border-radius:5px;margin-bottom:10px}.mock-line.accent{background:var(--accent);width:42%}.project-body{padding:27px}.project-body h3{font-size:1.35rem}.project-body p{color:var(--muted);font-size:.95rem}.project-link{color:#fff;font-weight:600}.project-link i{transition:.2s}.project-link:hover{color:var(--accent)}.project-link:hover i{transform:translate(4px,-4px)}
+    .timeline{position:relative;padding-left:34px}.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:0;width:1px;background:var(--line)}.timeline-item{position:relative;padding-bottom:48px}.timeline-item::before{content:"";position:absolute;left:-34px;top:8px;width:13px;height:13px;background:var(--bg);border:3px solid var(--accent);border-radius:50%}.timeline-meta{color:var(--accent);font-family:monospace;font-size:.86rem}.timeline-item h3{font-size:1.4rem;margin:8px 0 3px}.timeline-item h4{font:500 .95rem 'DM Sans';color:#c0c7d1}.timeline-item p{color:var(--muted);max-width:660px}
+    .contact-card{padding:clamp(28px,6vw,70px);position:relative;overflow:hidden}.contact-card::after{content:"@";position:absolute;right:-20px;bottom:-85px;font:700 260px 'Space Grotesk';color:rgba(255,255,255,.025)}.social-link{width:46px;height:46px;display:inline-grid;place-items:center;border:1px solid var(--line);border-radius:12px;color:#fff;margin-right:7px;position:relative;z-index:2}.social-link:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-3px)}
+    /* Keep decoration behind the contact controls and out of hit testing. */
+    .contact-card::after{pointer-events:none;z-index:0}
+    .contact-card > .row{position:relative;z-index:1}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}.back-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border:1px solid var(--line);background:var(--surface-2);color:#fff;border-radius:12px;display:none;place-items:center;z-index:20}.back-top:hover{color:var(--accent)}button.active{background:#2f353f!important;color:#a88541!important;border-color:#a88541!important}
+    #about .about-structure{display:grid;grid-template-columns:minmax(230px,330px) minmax(0,1fr);gap:clamp(30px,5vw,70px);align-items:start}#about .about-main{min-width:0}#about .profile-frame{height:410px;position:relative;border:1px solid rgba(168,133,65,.7);padding:11px;background:#11171c;box-shadow:12px 12px 0 rgba(168,133,65,.09)}#about .profile-tag{position:absolute;bottom:19px;right:20px;color:var(--accent);font:600 .65rem monospace;letter-spacing:.12em}#about .about-side-note{margin:38px 0 26px}#about .about-side-note .about-card-number:before,#about .about-card-head .about-card-number:before{content:"";display:inline-block;width:34px;height:1px;background:var(--accent);vertical-align:middle;margin-right:12px}#about .about-side-note p{color:var(--muted);margin:18px 0 0}#about .about-socials{display:flex;gap:9px}#about .about-socials a{height:46px;width:52px;display:grid;place-items:center;color:var(--accent);border:1px solid var(--line);background:var(--surface-2)}#about .about-socials a:hover{border-color:var(--accent);background:rgba(168,133,65,.1)}#about .about-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:38px}#about .about-tab-btn{border-radius:0;background:var(--surface-2);color:var(--text);padding:16px 17px;display:flex;justify-content:space-between;align-items:center;letter-spacing:0}#about .about-tab-btn span{color:var(--accent)}#about .about-tab-btn.active{background:var(--accent)!important;color:#16120a!important;border-color:var(--accent)!important;box-shadow:none}#about .about-tab-btn.active span{color:#16120a}#about .about-data-card{padding:0;background:none;border:0;border-radius:0}#about .about-card-head{display:block;margin:0 0 26px}#about .about-card-head .icon-box{display:none}#about .about-card-head h3{font-size:clamp(2.5rem,5vw,4.2rem);line-height:1.05;margin:16px 0}#about .about-card-head h3 em{font-style:normal;color:var(--accent)}#about .about-card-head p{color:var(--muted);max-width:700px}#about .bio-list{column-gap:26px}#about .bio-row{grid-template-columns:105px minmax(0,1fr);gap:10px;border:0;padding:13px 0}#about .bio-row dt{color:var(--accent);font-size:.82rem}#about .bio-row dd{font-size:.9rem}#about .bio-row a{text-decoration:underline;text-underline-offset:3px}#about .company-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media(max-width:991px){.nav-link{margin-left:0;padding:11px 0}.design-window{margin-top:45px;transform:none}.section{padding:85px 0}}
+    @media(max-width:767px){#about .about-structure{grid-template-columns:1fr}#about .bio-list{grid-template-columns:1fr}#skills .skill-card{min-height:0}}
+    @media(max-width:576px){.hero h1{font-size:3.35rem}.hero{padding-top:115px}.design-bar{flex-wrap:wrap}.app-tabs{order:2;width:100%;margin-left:0}.app-tab{flex:1;justify-content:center}.design-body{grid-template-columns:38px 1fr 52px}.artboard{width:175px}.section{padding:72px 0}#about .about-tabs{gap:6px}#about .about-tab-btn{font-size:.72rem;padding:12px 8px}#about .bio-row{grid-template-columns:100px minmax(0,1fr)}#about .company-list{grid-template-columns:1fr}}
+    @media(max-width:767px){#about .about-sidebar{display:block;width:100%;min-width:0}#about .profile-frame{display:block;width:100%;height:clamp(360px,100vw,540px);box-shadow:8px 8px 0 rgba(168,133,65,.09)}#about .about-side-note{margin:30px 0 20px}#about .about-socials{width:100%}#about .about-socials a{flex:1;min-width:0;height:52px}#home h1{font-size:clamp(3.4rem,14vw,4.5rem);line-height:.96;letter-spacing:-.055em}#home .stat{text-align:center;padding:22px 6px 0}#home .stat-number,#home .stat-label{width:100%;text-align:center}#home .stat-label{font-size:clamp(.72rem,2.9vw,.85rem);line-height:1.35}}
+    @media(max-width:360px){#home h1{font-size:3.25rem}}
+
+    /* About Me photo */
+    #about .profile-frame{overflow:hidden}
+    #about .profile-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;border:1px solid var(--line);filter:blur(16px);transform:scale(1.04);transition:filter .45s ease,transform .45s ease}
+    #about .profile-reveal{position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%);padding:12px 18px;border:1px solid var(--accent);border-radius:10px;background:rgba(8,11,17,.88);color:#fff;font-weight:700;white-space:nowrap;cursor:pointer}
+    #about .profile-reveal:hover,#about .profile-reveal:focus-visible{background:var(--accent);color:#16120a}
+    #about .profile-frame.is-revealed .profile-photo{filter:none;transform:scale(1)}
+    #about .profile-frame.is-revealed .profile-reveal{display:none}
+
+    /* Selected work carousel */
+    #projects .project-carousel{position:relative}
+    #projects .project-track{position:relative;display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:8px 3px 20px;overscroll-behavior-inline:contain}
+    #projects .project-track::-webkit-scrollbar{display:none}
+    #projects .project-item{flex:0 0 calc((100% - 44px)/3);min-width:0;scroll-snap-align:start;display:flex}
+    #projects .project-card{display:flex;flex-direction:column;width:100%}
+    #projects .project-card{cursor:pointer}
+    #projects .project-card:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    
+    #projects .project-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 25px;
+      overflow: visible !important;
+    }
+    
+    /* Make tech-list push to the bottom uniformly across all cards */
+    #projects .project-body .tech-list {
+      margin-top: auto;
+      margin-bottom: 0 !important;
+      overflow: visible !important;
+    }
+
+    /* Standalone borderless icons */
+    #projects .tech-pill {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      margin-right: 8px;
+    }
+
+    /* Resume card styles */
+    .resume-card {
+      background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      cursor: pointer;
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+      position: relative;
+      text-align: left;
+    }
+    .resume-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(219,159,44,0.45);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+    .resume-card .eyebrow {
+      font-size: 0.75rem;
+      margin-bottom: 8px;
+    }
+    .resume-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .resume-card h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .resume-card-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      background: rgba(255,255,255,.02);
+    }
+    .resume-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .resume-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      font-family: monospace;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Custom Designed Tooltips with left alignment to prevent edge clipping */
+    .custom-tooltip {
+      position: relative;
+      display: inline-block;
+      overflow: visible !important;
+    }
+    .custom-tooltip .tooltip-text {
+      visibility: hidden;
+      width: auto;
+      background-color: var(--surface-2, #131a25);
+      color: var(--text, #f2f5f7);
+      text-align: left;
+      border-radius: 8px;
+      padding: 8px 12px;
+      position: absolute;
+      z-index: 9999;
+      bottom: 140%;
+      left: 0;
+      transform: translateY(4px);
+      opacity: 0;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      font-size: 0.78rem;
+      font-family: 'DM Sans', sans-serif;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      border: 1px solid rgba(219,159,44,0.45);
+      pointer-events: none;
+      white-space: normal;
+      word-wrap: break-word;
+    }
+    .custom-tooltip .tooltip-text::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 20px;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--surface-2, #131a25) transparent transparent transparent;
+    }
+    .custom-tooltip:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #projects .project-visual{height:auto;aspect-ratio:4/5;min-height:0}
+    #projects .project-visual::before{width:75%;height:auto;aspect-ratio:1}
+    #projects .project-visual.has-thumbnail::before,
+    #projects .project-visual.has-thumbnail::after{display:none}
+    #projects .project-thumbnail{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+    #projects .mock-window{width:62%;height:76%;padding:18px;transform:rotate(-4deg);border-radius:7px;background:#0b1018;box-shadow:0 22px 45px rgba(0,0,0,.5)}
+    #projects .project-body .project-link{margin-top:auto}
+    #projects .project-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px}
+    #projects .project-count{color:var(--muted);font:600 .82rem monospace;letter-spacing:.12em}
+    #projects .project-arrows{display:flex;gap:10px}
+    #projects .project-arrow{width:46px;height:46px;border:1px solid rgba(219,159,44,.55);border-radius:50%;background:var(--surface-2);color:var(--text)}
+    #projects .project-arrow:hover{background:var(--accent);color:#16120a}
+    #projects .project-arrow:disabled{opacity:.35;cursor:default;background:var(--surface-2);color:var(--muted)}
+    @media(max-width:991px){#projects .project-item{flex-basis:calc((100% - 22px)/2)}}
+    @media(max-width:600px){#projects .project-item{flex-basis:84%}#projects .project-track{gap:14px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+    /* Regular PDF display: Drive preview for hosted files, native viewer for local PDFs. */
+    #projectPdfModal .modal-dialog{width:calc(100% - 32px);max-width:1440px;height:calc(100vh - 24px);height:calc(100dvh - 24px);margin:12px auto}
+    #projectPdfModal .modal-content{height:100%;display:flex;flex-direction:column;background:#24272c;color:var(--text);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    #projectPdfModal .modal-header{flex-shrink:0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--surface);border-bottom:1px solid var(--line);padding:12px 16px}
+    #projectPdfTitle{font-size:1rem;margin:0;flex:1;min-width:120px}
+    #projectPdfModal .modal-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    #projectPdfModal .modal-actions a,#projectPdfModal .pdf-close{border:1px solid #a98650;border-radius:6px;padding:8px 12px;background:transparent;color:#f1dfbb;font-size:.8rem;cursor:pointer}
+    #projectPdfModal .modal-actions a:hover,#projectPdfModal .pdf-close:hover{background:#d8ae68;color:#111923}
+    #projectPdfModal .modal-body{display:flex;flex:1;min-height:0;padding:0;overflow:hidden}
+    #projectPdfFrame{display:block;width:100%;height:100%;flex:1;border:0;background:#fff}
+    #projectPdfModal .pdf-help{flex-shrink:0;margin:0;padding:8px 16px;background:var(--surface);color:#b9c0cb;font-size:.78rem;line-height:1.5}
+    .resume-card.project-card{height:auto;min-height:0;transform:none}
+    .resume-card.project-card:hover{transform:none}
+    @media(max-width:760px){
+      #projectPdfModal{padding:0!important}
+      #projectPdfModal .modal-dialog{width:100%;max-width:none;height:100vh;height:100dvh;margin:0}
+      #projectPdfModal .modal-content{border:0;border-radius:0}
+      #projectPdfModal .modal-header{padding:10px;gap:8px}
+      #projectPdfTitle{flex-basis:100%}
+      #projectPdfModal .modal-actions{width:100%}
+      #projectPdfModal .pdf-close{margin-left:auto}
+      #projectPdfModal .pdf-help{padding:8px 10px max(8px,env(safe-area-inset-bottom))}
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">manuel.design</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-accent btn-sm px-3" href="#contact">Let's talk</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="status"><span class="status-dot"></span>Available for creative opportunities</div>
+            <h1>Graphic<br><span class="role-word">Artist.</span></h1>
+            <p class="hero-lead">I create compelling visual experiences through branding, typography, illustration, print, and digital design—from first concept to final production.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-accent" href="#projects">View my work <i class="fa-solid fa-arrow-down ms-2"></i></a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+            </div>
+            <div class="row mt-5">
+              <div class="col-4 stat"><div class="stat-number"><span class="counter" data-target="13">0</span>+</div><div class="stat-label">Years in design</div></div>
+              <div class="col-4 stat"><div class="stat-number"><span class="counter" data-target="4">0</span></div><div class="stat-label">Creative Adobe Tools</div></div>
+              <div class="col-4 stat"><div class="stat-number"><span class="counter" data-target="5">0</span></div><div class="stat-label">Companies</div></div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="design-window" aria-label="Interactive Adobe workspace preview">
+              <div class="design-bar">
+                <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+                <div class="app-tabs" role="tablist" aria-label="Choose design software">
+                  <button class="app-tab active" type="button" role="tab" aria-selected="true" data-app="photoshop" style="--tab-color:#31a8ff"><span class="app-icon">Ps</span><span>Photoshop</span></button>
+                  <button class="app-tab" type="button" role="tab" aria-selected="false" data-app="illustrator" style="--tab-color:#ff9a00"><span class="app-icon">Ai</span><span>Illustrator</span></button>
+                  <button class="app-tab" type="button" role="tab" aria-selected="false" data-app="indesign" style="--tab-color:#ff3366"><span class="app-icon">Id</span><span>InDesign</span></button>
+                </div>
+                <span class="design-filename">campaign-poster.psd</span>
+              </div>
+              <div class="design-body">
+                <div class="design-tools">
+                  <div class="tool active"><i class="fa-solid fa-arrow-pointer"></i></div>
+                  <div class="tool"><i class="fa-solid fa-pen-nib"></i></div>
+                  <div class="tool"><i class="fa-solid fa-font"></i></div>
+                  <div class="tool"><i class="fa-regular fa-square"></i></div>
+                  <div class="tool"><i class="fa-solid fa-eye-dropper"></i></div>
+                </div>
+                <div class="artboard-wrap">
+                  <div class="artboard">
+                    <div class="art-kicker">CREATE / CONNECT</div>
+                    <div class="art-title">VISUAL<br>IMPACT.</div>
+                    <div class="art-copy">Bold ideas shaped into memorable brand experiences.</div>
+                    <div class="swatches"><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="design-layers">
+                  <div class="layer-line active"></div><div class="layer-line"></div><div class="layer-line"></div><div class="layer-line"></div><div class="layer-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container reveal">
+        <p class="eyebrow">01 / About</p>
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7"><h2 class="section-title">Visual ideas, crafted with purpose.</h2></div>
+          <div class="col-lg-5"><p class="section-copy">I’m Manuel Roy Cabahug, a Senior Graphic Artist in Mandaue City with expertise in Adobe Creative Suite, typography, branding, and multimedia design.</p></div>
+        </div>
+        <div class="about-structure">
+          <aside class="about-sidebar">
+            <div class="profile-frame">
+              <img class="profile-photo" src="files/me.png" alt="Portrait of Manuel Roy Cabahug" loading="lazy">
+              <button class="profile-reveal" type="button" aria-label="Reveal profile photo"><i class="fa-solid fa-eye me-2" aria-hidden="true"></i>Reveal photo</button>
+              <span class="profile-tag">PROFILE</span>
+            </div>
+            <div class="about-side-note"><span class="about-card-number">WHY WORK WITH ME?</span><p>I turn ideas into clear, memorable visuals across branding, print, and digital design.</p></div>
+            <div class="about-socials">
+              <a href="https://www.linkedin.com/in/manuel-roy-cabahug-jr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+              <a href="mailto:manuelroy.cabahug@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+              <a href="tel:+639760142712" aria-label="Call"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            </div>
+          </aside>
+          <div class="about-main">
+            <div class="about-tabs" role="tablist" aria-label="About information">
+              <button class="about-tab-btn active" type="button" role="tab" aria-selected="true" aria-controls="about-biodata" data-about-tab="biodata">About Me <span aria-hidden="true">↗</span></button>
+              <button class="about-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="about-experience" data-about-tab="experience">Experience <span aria-hidden="true">↗</span></button>
+              <button class="about-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="about-education" data-about-tab="education">Education <span aria-hidden="true">↗</span></button>
+            </div>
+            <article class="about-data-card active" id="about-biodata" role="tabpanel" data-about-panel="biodata">
+              <div class="about-card-head"><span class="about-card-number">01 / ABOUT ME</span><h3>About <em>Me</em></h3><p>I’m Manuel Roy Cabahug, a Senior Graphic Artist based in Mandaue City, Cebu. I create thoughtful visual work across branding, typography, and multimedia design.</p></div>
+              <dl class="bio-list">
+                <div class="bio-row"><dt>Name</dt><dd>Manuel Roy Cabahug</dd></div>
+                <div class="bio-row"><dt>Role</dt><dd>Senior Graphic Artist</dd></div>
+                <div class="bio-row"><dt>Contact Number</dt><dd><a href="tel:+639760142712">0976 014 2712</a></dd></div>
+                <div class="bio-row"><dt>Email Address</dt><dd><a href="mailto:manuelroy.cabahug@gmail.com">manuelroy.cabahug@gmail.com</a></dd></div>
+                <div class="bio-row"><dt>City</dt><dd>Mandaue City, Cebu, Philippines</dd></div>
+                <div class="bio-row"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/manuel-roy-cabahug-jr/" target="_blank" rel="noopener noreferrer">Manuel Roy Cabahug</a></dd></div>
+              </dl>
+            </article>
+            <article class="about-data-card" id="about-education" role="tabpanel" data-about-panel="education" hidden>
+              <div class="about-card-head"><div class="icon-box"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div><div><span class="about-card-number">02 / Academic</span><h3>Education</h3></div></div>
+              <div class="education-list">
+                <div class="education-item"><strong>Bachelor’s Degree in Information Technology</strong><span>Cebu Institute of Technology – University · 2007–2011</span></div>
+                <div class="education-item"><strong>Fine Arts Certificate</strong><span>University of the Philippines · 2005–2007</span></div>
+              </div>
+            </article>
+            <article class="about-data-card work-card" id="about-experience" role="tabpanel" data-about-panel="experience" hidden>
+              <div class="about-card-head"><div class="icon-box"><i class="fa-solid fa-building" aria-hidden="true"></i></div><div><span class="about-card-number">03 / Career</span><h3>Experience</h3></div></div>
+              <div class="company-list">
+                <div class="company-item"><strong>Worldwide Interior Design Center Corp.</strong><span>Senior Graphic Artist · 2025–Present</span></div>
+                <div class="company-item"><strong>RedHorse Marketing, LLC</strong><span>Senior Graphic Artist · 2018–2023</span></div>
+                <div class="company-item"><strong>Duext LLC</strong><span>Graphic Artist · 2018</span></div>
+                <div class="company-item"><strong>MSY Holdings Corp.</strong><span>Junior Graphic Artist · 2012–2018</span></div>
+                <div class="company-item"><strong>WebXpress Inc.</strong><span>Web Designer · 2011–2012</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <p class="eyebrow">02 / Expertise</p>
+        <h2 class="section-title">My Strengths and My Skills</h2>
+        <p class="section-copy mb-5">Strong visual fundamentals combined with production experience across print, digital, commerce, and web.</p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3"><div class="skill-card"><h3><i class="fa-solid fa-bezier-curve me-2 text-success"></i>Creative Suite</h3><div class="tech-list"><span class="tech-pill">Adobe Creative</span><span class="tech-pill">Illustrator</span><span class="tech-pill">Indesign</span><span class="tech-pill">Photoshop</span><span class="tech-pill">Premier Pro</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="skill-card"><h3><i class="fa-solid fa-pen-ruler me-2 text-info"></i>Visual Design</h3><div class="tech-list"><span class="tech-pill">Typography · Expert</span><span class="tech-pill">Digital Design</span><span class="tech-pill">Visual Storytelling</span><span class="tech-pill">Layout Design</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="skill-card"><h3><i class="fa-solid fa-print me-2 text-warning"></i>Production</h3><div class="tech-list"><span class="tech-pill">Print-ready Artwork</span><span class="tech-pill">Signage</span><span class="tech-pill">Brochures</span><span class="tech-pill">Sales Kits</span><span class="tech-pill">Packaging</span><span class="tech-pill">Fliers</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="skill-card"><h3><i class="fa-solid fa-display me-2" style="color:#c792ea"></i>Digital</h3><div class="tech-list"><span class="tech-pill">Web Design</span><span class="tech-pill">UI Design</span><span class="tech-pill">Product Listings</span><span class="tech-pill">Promotional Video</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container reveal">
+        <div class="d-lg-flex justify-content-between align-items-end mb-5">
+          <div><p class="eyebrow">03 / Selected work</p><h2 class="section-title mb-0">Design that communicates.</h2></div>
+        </div>
+
+        <div class="project-carousel">
+          <div class="project-track" id="projectGrid" aria-label="Selected work carousel" tabindex="0">
+
+            <!-- Portfolio Kit (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Portfolio Kit PDF" data-pdf="files/general.pdf">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/General-thumbnail.jpg" alt="Marketing collateral project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">General</span>
+                  <h3>Porfolio Kit</h3>
+                  <p>Designing branded marketing materials including, brochures, banners, brand packaging and flyers enhanced with AI image simulation.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/photoshop.png" class="border border-white" alt="Photoshop" width="40" height="40"><span class="tooltip-text">Adobe Photoshop</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tarp (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Tarp project" data-pdf="https://drive.google.com/file/d/1DEtjrWODo_ODs4k_tWXNBL-kqZTvNuXc/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/tarp/tarp.jpg" alt="Tarp project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">Tarp</span>
+                  <h3>Tarpaulin</h3>
+                  <p>Designing large-scale, tarpaulin banners that capture attention and drive brand awareness. I create high-quality, print-ready graphics tailored for impactful outdoor and event marketing.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/photoshop.png" class="border border-white" alt="Photoshop" width="40" height="40"><span class="tooltip-text">Adobe Photoshop</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Craftswood Door (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Craftswood Door PDF" data-pdf="https://drive.google.com/file/d/1qrusd4totl5B_NQBDR4mirr2PLWF78ga/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/brochure/craftswood_door.jpg" alt="Craftswood Door thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">BROCHURE</span>
+                  <h3>Craftswood Door</h3>
+                  <p>Designing comprehensive and visually appealing product brochures for door manufacturers and suppliers. I specialize in organizing various door styles, wood grains, finishes, and technical specifications into clean layouts tailored for architects, builders, and homeowners.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/indesign.png" class="border border-white" alt="InDesign" width="40" height="40"><span class="tooltip-text">Adobe InDesign</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Marco Polo Sanitary Wares (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Marco Polo Sanitary Wares PDF" data-pdf="https://drive.google.com/file/d/1h4fCm5fRKqCIJx4TuiQwJbLELN5WX_3-/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/brochure/marco_polo_sanitary_wares.png" alt="Marco Polo thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">BROCHURE</span>
+                  <h3>Marco Polo Sanitary Wares</h3>
+                  <p>Designing well-organized product brochures for sanitary ware and plumbing brands. I specialize in seamlessly blending technical specifications, dimensions, and lifestyle imagery into cohesive layouts that elevate the brand and effectively showcase product quality to buyers and interior designers.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/indesign.png" class="border border-white" alt="InDesign" width="40" height="40"><span class="tooltip-text">Adobe InDesign</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Porcelain Tiles (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Porcelain Tiles PDF" data-pdf="https://drive.google.com/file/d/1HSJTjP1RwLMnTRWPQUIpoKo4pDf-_zx9/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/brochure/porcelain_tiles_collection.jpg" alt="Porcelain Tiles thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">BROCHURE</span>
+                  <h3>Porcelain Tiles</h3>
+                  <p>Designing elegant, highly organized product brochures for porcelain tile brands. I specialize in balancing high-resolution textures and room scenes with essential specifications like dimensions and finishes, creating print-ready catalogs that appeal to both industry professionals and retail buyers.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/indesign.png" class="border border-white" alt="InDesign" width="40" height="40"><span class="tooltip-text">Adobe InDesign</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Standee (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Standee project" data-pdf="https://drive.google.com/file/d/1d0Ybg2hJnKq0akE468r7iOfejTczNeK6/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/standee/standee.jpg" alt="Standee project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">Standee</span>
+                  <h3>Standee</h3>
+                  <p>Designing engaging and highly visible standee signage for marketing campaigns, retail promotions, and corporate events. I create clean, impactful, print-ready graphics that effectively capture attention.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/photoshop.png" class="border border-white" alt="Photoshop" width="40" height="40"><span class="tooltip-text">Adobe Photoshop</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Invitation (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Invitation PDF" data-pdf="https://drive.google.com/file/d/1BJHg-V0tT2J-qR_3Le3ppXSSaEW4hpvz/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/Invitation/Invitation.jpg" alt="Invitation project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">Invitation</span>
+                  <h3>Invitation</h3>
+                  <p>Designing highly customized, visually appealing invitations for both personal milestones and corporate gatherings. I focus on cohesive typography, thoughtful layouts, and thematic elements to create a memorable first impression for guests.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/photoshop.png" class="border border-white" alt="Photoshop" width="40" height="40"><span class="tooltip-text">Adobe Photoshop</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- flyers (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Flyers PDF" data-pdf="https://drive.google.com/file/d/1gPnYXzAo3AnL5V50ObiuSjhDbpJlvPdC/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/flyers/flyers.jpg" alt="flyers project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">Flyers</span>
+                  <h3>Flyers</h3>
+                  <p>Designing impactful, print-ready flyers for marketing campaigns, special events, and product promos. I focus on compelling layouts, strong typography, and clear calls-to-action to maximize audience engagement within a single page.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/photoshop.png" class="border border-white" alt="Photoshop" width="40" height="40"><span class="tooltip-text">Adobe Photoshop</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Packaging (PDF) -->
+            <div class="project-item">
+              <article class="project-card" role="button" tabindex="0" aria-label="View Packaging PDF" data-pdf="https://drive.google.com/file/d/1UyvJDUCsWtioXxWcXQmWFNwypDs5F5g6/view">
+                <div class="project-visual has-thumbnail">
+                  <img class="project-thumbnail" src="files/work/package/package.jpg" alt="Packaging project thumbnail" loading="lazy">
+                </div>
+                <div class="project-body">
+                  <span class="eyebrow mb-2">Packaging</span>
+                  <h3>Packaging Design</h3>
+                  <p>Designing innovative and functional brand packaging, including product labels, boxes, and wrappers. I specialize in combining structural layouts with compelling graphics and typography to create print-ready designs that enhance brand recognition and the overall unboxing experience.</p>
+                  <div class="tech-list mb-4">
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/illustrator.png" class="border border-white" alt="Illustrator" width="40" height="40"><span class="tooltip-text">Adobe Illustrator</span></span>
+                    <span class="tech-pill custom-tooltip"><img src="files/icon/AI-white.png" alt="AI Asset" width="40" height="40"><span class="tooltip-text">Manus.ai <br/> Gemini <br/> ChatGPT</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="project-controls">
+            <span class="project-count" aria-live="polite">01 / 08</span>
+            <div class="project-arrows">
+              <button class="project-arrow project-prev" type="button" aria-label="Previous work" disabled><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button class="project-arrow project-next" type="button" aria-label="Next work"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container reveal">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="eyebrow">04 / Experience</p>
+            <h2 class="section-title">A career shaped by visual craft.</h2>
+            <p class="section-copy mb-5">More than a decade creating brand, print, digital, commerce, and web design across diverse teams.</p>
+            <div class="skill-card mb-4">
+              <h3>Education</h3>
+              <p class="mb-1">Bachelor's Degree, Information Technology</p>
+              <small class="text-muted-custom">Cebu Institute of Technology - University · 2007–2011</small>
+              <hr class="border-secondary my-3">
+              <p class="mb-1">Fine Arts Certificate</p>
+              <small class="text-muted-custom">University of the Philippines · 2005–2007</small>
+            </div>
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <div class="timeline">
+              <article class="timeline-item"><span class="timeline-meta">08/2025 — PRESENT</span><h3>Senior Graphic Artist</h3><h4>Worldwide Interior Design Center Corp.</h4><p>Produces branded flyers, brochures, sales kits, tarpaulins, street banners, and signage; oversees projects from initial sketch through final print delivery.</p></article>
+              <article class="timeline-item"><span class="timeline-meta">10/2018 — 10/2023</span><h3>Senior Graphic Artist</h3><h4>RedHorse Marketing, LLC</h4><p>Created on-brand Amazon, Etsy, and Shopify content, promotional product videos, and customized product designs aligned with client vision.</p></article>
+              <article class="timeline-item"><span class="timeline-meta">04/2018 — 10/2018</span><h3>Graphic Artist</h3><h4>Duext LLC</h4><p>Designed graphic layouts, production communication materials, evacuation plans, professional signage, and backdrafts.</p></article>
+              <article class="timeline-item"><span class="timeline-meta">12/2012 — 01/2018</span><h3>Junior Graphic Artist</h3><h4>MSY Holdings Corp.</h4><p>Developed the company brand identity across business cards, brochures, flyers, advertisements, and other marketing collateral.</p></article>
+              <article class="timeline-item"><span class="timeline-meta">06/2011 — 11/2012</span><h3>Web Designer</h3><h4>WebXpress Inc.</h4><p>Created website layouts, logos, typography, color palettes, digital newsletters, landing pages, and interactive user interfaces.</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container reveal">
+        <div class="contact-card">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <p class="eyebrow">04 / Contact</p>
+              <h2 class="section-title">Let’s create something memorable.</h2>
+              <p class="section-copy">Available for graphic design roles, brand collaborations, print campaigns, and digital creative projects.</p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-accent" href="mailto:manuelroy.cabahug@gmail.com">Email Manuel <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                <a class="btn btn-ghost" href="tel:+639760142712"><i class="fa-solid fa-phone me-2"></i>0976 014 2712</a>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-5 mt-lg-0">
+              <article class="resume-card project-card mb-4" role="button" tabindex="0" aria-label="View Resume PDF" data-pdf="files/resume.pdf">
+                <div class="resume-card-header">
+                  <div>
+                    <span class="eyebrow">PDF / RESUME</span>
+                    <h3>My Resume</h3>
+                  </div>
+                  <div class="resume-card-icon">
+                    <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <p>View my complete experience, skills, education, and professional background.</p>
+                <div class="resume-card-footer">
+                  <span>CLICK TO VIEW & DOWNLOAD</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </div>
+              </article>
+              <div class="text-lg-end">
+                <p class="text-muted-custom mb-1">Mandaue City, Cebu</p>
+                <p class="mb-1"><a href="mailto:manuelroy.cabahug@gmail.com" class="text-reset">manuelroy.cabahug@gmail.com</a></p>
+                <p class="mb-0"><a href="https://www.linkedin.com/in/manuel-roy-cabahug-jr/" target="_blank" rel="noopener noreferrer" class="text-reset">LinkedIn / Manuel Roy Cabahug <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em; color:var(--accent);"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade pdf-modal" id="projectPdfModal" tabindex="-1" aria-labelledby="projectPdfTitle" aria-describedby="projectPdfHelp" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="projectPdfTitle">Project PDF viewer</h2>
+          <div class="modal-actions">
+            <a id="projectPdfOpen" href="#" target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
+            <a id="projectPdfDownload" href="#" target="_blank" rel="noopener noreferrer">Download ↓</a>
+            <button type="button" class="pdf-close" data-bs-dismiss="modal" aria-label="Close PDF viewer">Close ×</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <iframe id="projectPdfFrame" src="about:blank" title="Project PDF document" allow="fullscreen" allowfullscreen></iframe>
+        </div>
+        <p id="projectPdfHelp" class="pdf-help">If the PDF does not display, select Open PDF to view it in a new tab.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+      <span>© <span id="year"></span> Manuel Roy Cabahug.</span>
+      <span>Senior Graphic Artist · Mandaue City, Cebu</span>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function(){
+      $('#year').text(new Date().getFullYear());
+
+      const reveal=()=>$('.reveal').each(function(){
+        if($(this).offset().top<$(window).scrollTop()+$(window).height()-80)$(this).addClass('visible')
+      });
+      let counted=false;
+      const count=()=>{
+        if(counted||$('.counter').first().offset().top>$(window).scrollTop()+$(window).height())return;
+        counted=true;
+        $('.counter').each(function(){
+          const $el=$(this),target=+$el.data('target');
+          $({n:0}).animate({n:target},{duration:1300,easing:'swing',step:function(){$el.text(Math.ceil(this.n))},complete:function(){$el.text(target)}})
+        })
+      };
+
+      $(window).on('scroll',function(){
+        const y=$(this).scrollTop();
+        $('.navbar').toggleClass('scrolled',y>30);
+        $('.back-top').css('display',y>500?'grid':'none');
+        reveal();count();
+        let current='home';
+        $('main section').each(function(){if(y>=$(this).offset().top-140)current=this.id});
+        $('.nav-link').removeClass('active').filter('[href="#'+current+'"]').addClass('active')
+      });
+
+      // Include the Let's Talk button and use Bootstrap 5's native API.
+      $('.navbar a[href^="#"]').on('click',function(event){
+        if(event.isDefaultPrevented() || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.which===2)return;
+        const target=document.getElementById(this.getAttribute('href').slice(1));
+        const menu=document.getElementById('navMenu');
+        if(target && menu && menu.classList.contains('show') && window.bootstrap){
+          bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide();
+        }
+      });
+      $('.back-top').on('click',()=>$('html,body').animate({scrollTop:0},500));
+
+      $('.profile-reveal').on('click',function(){
+        $(this).closest('.profile-frame').addClass('is-revealed')
+      });
+
+      const pdfModalEl=document.getElementById('projectPdfModal');
+      const pdfModal=new bootstrap.Modal(pdfModalEl);
+      const pdfFrame=document.getElementById('projectPdfFrame');
+      let selectedPreview='about:blank';
+      let selectedCard=null;
+
+      // Drive PDFs use /preview inside the iframe; /view opens a separate tab.
+      // Keep files shared with the intended audience. For a public portfolio,
+      // set each Drive PDF to "Anyone with the link" / "Viewer".
+      function pdfLinks(source){
+        const url=new URL(source,document.baseURI);
+        const match=url.hostname==='drive.google.com' && url.pathname.match(/^\/file\/d\/([A-Za-z0-9_-]+)/);
+        if(match){
+          const id=match[1];
+          return {
+            preview:'https://drive.google.com/file/d/'+id+'/preview',
+            open:'https://drive.google.com/file/d/'+id+'/view',
+            download:'https://drive.google.com/uc?export=download&id='+encodeURIComponent(id),
+            drive:true
+          };
+        }
+        return {preview:url.href,open:url.href,download:url.href,drive:false};
+      }
+
+      $('.project-card').on('click',function(event){
+        if($(event.target).closest('a').length)return;
+        const pdf=this.dataset.pdf;
+        if(pdf){
+          selectedCard=this;
+          const title=$(this).find('h3').text().trim() || 'PDF document';
+          const links=pdfLinks(pdf);
+          selectedPreview=links.preview;
+          $('#projectPdfTitle').text(title);
+          pdfFrame.title=title+' — PDF document';
+          $('#projectPdfOpen').attr('href',links.open);
+          const download=document.getElementById('projectPdfDownload');
+          download.href=links.download;
+          if(links.drive)download.removeAttribute('download');
+          else download.setAttribute('download',pdf.split('/').pop());
+          pdfModal.show();
+        }else{
+          const link=this.querySelector('a.project-link[href]');
+          if(link)link.click();
+        }
+      }).on('keydown',function(event){
+        if(event.target===this&&(event.key==='Enter'||event.key===' ')){
+          event.preventDefault();$(this).trigger('click');
+        }
+      });
+      pdfModalEl.addEventListener('shown.bs.modal',()=>{pdfFrame.src=selectedPreview;});
+      pdfModalEl.addEventListener('hidden.bs.modal',()=>{
+        pdfFrame.src='about:blank';
+        selectedPreview='about:blank';
+        if(selectedCard)selectedCard.focus({preventScroll:true});
+      });
+
+      const $experienceSection=$('#experience');
+      if($experienceSection.length){
+        $experienceSection.find('.skill-card').remove();
+        $('#about-experience').empty().append($experienceSection.children('.container').children());
+        $experienceSection.remove();
+      }
+
+      $('.about-tab-btn').on('click',function(){
+        const tab=$(this).data('about-tab');
+        $('.about-tab-btn').removeClass('active').attr('aria-selected','false');
+        $(this).addClass('active').attr('aria-selected','true');
+        $('.about-data-card[data-about-panel]').removeClass('active').attr('hidden',true);
+        $('.about-data-card[data-about-panel="'+tab+'"]').removeAttr('hidden').addClass('active');
+      });
+
+      const projectTrack=document.getElementById('projectGrid');
+      const visibleProjects=()=>[...projectTrack.querySelectorAll('.project-item')].filter(item=>!item.hidden);
+
+      const updateProjectControls=()=>{
+        const items=visibleProjects();
+        const index=items.reduce(
+          (best,item,i)=>Math.abs(item.offsetLeft-projectTrack.scrollLeft)<Math.abs(items[best].offsetLeft-projectTrack.scrollLeft)?i:best,
+          0
+        );
+        $('.project-count').text(String(index+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0'));
+        $('.project-prev').prop('disabled',index===0);
+        $('.project-next').prop('disabled',index>=items.length-1);
+      };
+
+      $('.project-arrow').on('click',function(){
+        const items=visibleProjects();
+        const current=items.reduce(
+          (best,item,i)=>Math.abs(item.offsetLeft-projectTrack.scrollLeft)<Math.abs(items[best].offsetLeft-projectTrack.scrollLeft)?i:best,
+          0
+        );
+        const next=Math.max(0,Math.min(items.length-1,current+($(this).hasClass('project-next')?1:-1)));
+        projectTrack.scrollTo({
+          left:items[next].offsetLeft,
+          behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'
+        });
+      });
+
+      projectTrack.addEventListener('scroll',updateProjectControls,{passive:true});
+      window.addEventListener('resize',updateProjectControls);
+      updateProjectControls();
+
+      const appPreviews={
+        photoshop:{file:'campaign-poster.psd',accent:'#31a8ff',shapeOne:'#a88541',shapeTwo:'#57c9ff',kicker:'EDIT / COMPOSE',title:'VISUAL<br>IMPACT.',copy:'Bold imagery refined into a memorable campaign.'},
+        illustrator:{file:'brand-identity.ai',accent:'#ff9a00',shapeOne:'#ffb000',shapeTwo:'#ff6b35',kicker:'DRAW / CREATE',title:'BOLD<br>IDENTITY.',copy:'Precision vectors shaped into a distinctive visual system.'},
+        indesign:{file:'editorial-layout.indd',accent:'#ff3366',shapeOne:'#ff4f87',shapeTwo:'#8f56ff',kicker:'LAYOUT / PUBLISH',title:'CLEAR<br>STORIES.',copy:'Strong typography and structure for polished publications.'}
+      };
+      const appOrder=['photoshop','illustrator','indesign'];
+
+      const activateApp=function(appName){
+        const $tab=$('.app-tab[data-app="'+appName+'"]');
+        const app=appPreviews[appName];
+        const $window=$tab.closest('.design-window');
+        const $art=$window.find('.artboard');
+        $('.app-tab').removeClass('active').attr('aria-selected','false');
+        $tab.addClass('active').attr('aria-selected','true');
+        $window.css('--app-accent',app.accent).find('.design-filename').text(app.file);
+        $art.css({'--shape-one':app.shapeOne,'--shape-two':app.shapeTwo}).removeClass('artboard');
+        void $art[0].offsetWidth;
+        $art.addClass('artboard');
+        $art.find('.art-kicker').text(app.kicker);
+        $art.find('.art-title').html(app.title);
+        $art.find('.art-copy').text(app.copy);
+      };
+
+      let appIndex=0,appTimer;
+      const startAppLoop=()=>{
+        clearInterval(appTimer);
+        appTimer=setInterval(()=>{
+          appIndex=(appIndex+1)%appOrder.length;
+          activateApp(appOrder[appIndex])
+        },2000)
+      };
+      $('.app-tab').on('click',function(){
+        appIndex=appOrder.indexOf($(this).data('app'));
+        activateApp(appOrder[appIndex]);
+        startAppLoop()
+      });
+      startAppLoop();
+
+      let roleIndex=0;
+      const roles=['Artist.','Designer.'],$role=$('.role-word');
+      setInterval(()=>{
+        $role.addClass('switching');
+        setTimeout(()=>{
+          roleIndex=(roleIndex+1)%roles.length;
+          $role.text(roles[roleIndex]).removeClass('switching')
+        },280)
+      },2000);
+
+      reveal();
+      count();
+    });
+  </script>
+</body>
+</html>
